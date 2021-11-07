@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "guru-app": {
+    "contacts-app": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/guru-app",
+            "outputPath": "dist/contacts-app",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -28,7 +28,8 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles/styles.scss",
+              "src/styles/theme.scss"
             ],
             "scripts": []
           },
@@ -65,18 +66,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "guru-app:build"
+            "browserTarget": "contacts-app:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "guru-app:build:production"
+              "browserTarget": "contacts-app:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "guru-app:build"
+            "browserTarget": "contacts-app:build"
           }
         },
         "test": {
@@ -91,7 +92,8 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles/styles.scss",
+              "src/styles/theme.scss"
             ],
             "scripts": []
           }
@@ -113,16 +115,16 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "guru-app:serve"
+            "devServerTarget": "contacts-app:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "guru-app:serve:production"
+              "devServerTarget": "contacts-app:serve:production"
             }
           }
         }
       }
     }
   },
-  "defaultProject": "guru-app"
+  "defaultProject": "contacts-app"
 }

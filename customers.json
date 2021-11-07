@@ -1,0 +1,137 @@
+{
+  "Customers": 
+  [
+    {
+      "salutation": "Mr.",
+      "firstName": "Paul",
+      "lastName": "Mitchell",
+      "addressLine1": "1222 56th St S",
+      "addressLine2": "apt 23",
+      "city": "Fargo",
+      "state": "ND",
+      "zipCode": "58104",
+      "emailAddress": "ash@sample.com",
+      "telePhoneNumber": "5551345699"
+    },
+    {
+      "salutation": "Mr.",
+      "firstName": "John",
+      "lastName": "Harris",
+      "addressLine1": "1222 56th St S",
+      "addressLine2": "apt 23",
+      "city": "Fargo",
+      "state": "ND",
+      "zipCode": "58104",
+      "emailAddress": "ash@sample.com",
+      "telePhoneNumber": "5551345699"
+    },
+    {
+      "salutation": "Mrs.",
+      "firstName": "Melissa",
+      "lastName": "Evans",
+      "addressLine1": "1222 56th St S",
+      "addressLine2": "apt 23",
+      "city": "Fargo",
+      "state": "ND",
+      "zipCode": "58104",
+      "emailAddress": "ash@sample.com",
+      "telePhoneNumber": "5551345699"
+    },
+    {
+      "salutation": "Miss",
+      "firstName": "Kimberly",
+      "lastName": "Kelly",
+      "addressLine1": "1222 56th St S",
+      "addressLine2": "apt 23",
+      "city": "Fargo",
+      "state": "ND",
+      "zipCode": "58104",
+      "emailAddress": "ash@sample.com",
+      "telePhoneNumber": "5551345699"
+    },
+    {
+      "salutation": "Mr.",
+      "firstName": "Joseph",
+      "lastName": "Gray",
+      "addressLine1": "1222 56th St S",
+      "addressLine2": "apt 23",
+      "city": "Fargo",
+      "state": "ND",
+      "zipCode": "58104",
+      "emailAddress": "ash@sample.com",
+      "telePhoneNumber": "5551345699"
+    },
+    {
+      "salutation": "Mr.",
+      "firstName": "Daniel",
+      "lastName": "Coleman",
+      "addressLine1": "1222 56th St S",
+      "addressLine2": "apt 23",
+      "city": "Fargo",
+      "state": "ND",
+      "zipCode": "58104",
+      "emailAddress": "ash@sample.com",
+      "telePhoneNumber": "5551345699"
+    },
+    {
+      "salutation": "Miss",
+      "firstName": "Debra",
+      "lastName": "Myers",
+      "addressLine1": "1222 56th St S",
+      "addressLine2": "apt 23",
+      "city": "Fargo",
+      "state": "ND",
+      "zipCode": "58104",
+      "emailAddress": "ash@sample.com",
+      "telePhoneNumber": "5551345699"
+    },
+    {
+      "salutation": "Mrs.",
+      "firstName": "Amanda",
+      "lastName": "Gardner",
+      "addressLine1": "1222 56th St S",
+      "addressLine2": "apt 23",
+      "city": "Fargo",
+      "state": "ND",
+      "zipCode": "58104",
+      "emailAddress": "ash@sample.com",
+      "telePhoneNumber": "5551345699"
+    },
+    {
+      "salutation": "Mr.",
+      "firstName": "Roy",
+      "lastName": "Morrison",
+      "addressLine1": "1222 56th St S",
+      "addressLine2": "apt 23",
+      "city": "Fargo",
+      "state": "ND",
+      "zipCode": "58104",
+      "emailAddress": "ash@sample.com",
+      "telePhoneNumber": "5551345699"
+    },
+    {
+      "salutation": "Miss",
+      "firstName": "Debra",
+      "lastName": "Burton",
+      "addressLine1": "1222 56th St S",
+      "addressLine2": "apt 23",
+      "city": "Fargo",
+      "state": "ND",
+      "zipCode": "58104",
+      "emailAddress": "ash@sample.com",
+      "telePhoneNumber": "5551345699"
+    },
+    {
+      "salutation": "Mrs.",
+      "firstName": "Pamela",
+      "lastName": "Calderon",
+      "addressLine1": "1222 56th St S",
+      "addressLine2": "apt 23",
+      "city": "Fargo",
+      "state": "ND",
+      "zipCode": "58104",
+      "emailAddress": "ash@sample.com",
+      "telePhoneNumber": "5551345699"
+    }
+  ]
+}

@@ -1,0 +1,102 @@
+.main-container {
+  display: flex;
+  justify-content: center;
+  .customers-card {
+    width: 80rem;
+    padding: 0;
+    .customer-details-header {
+      height: 30%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      font: {
+        size: 3.6rem;
+        weight: 500;
+      }
+      letter-spacing: 0.1rem;
+      background-color: #344a55;
+      border-top-left-radius: 1.6rem;
+      border-top-right-radius: 1.6rem;
+      .img-border {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 5px solid white;
+        height: 120px;
+        width: 120px;
+        border-radius: 50%;
+        background-color: #f2ab19;
+        mat-icon {
+          color: white;
+          font-size: 100px;
+          height: 100px;
+          width: 100px;
+        }
+      }
+
+      p {
+        margin-top: 4rem;
+        color: white;
+      }
+    }
+    .customer-details-content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 50%;
+      .customer-data {
+        display: flex;
+        width: 50%;
+        p {
+          display: flex;
+          align-items: center;
+          margin: 2rem 0;
+          font-size: 2rem;
+          mat-icon {
+            height: 4rem;
+            width: 4rem;
+            font-size: 4rem;
+            margin-right: 3rem;
+          }
+        }
+      }
+    }
+    .customer-details-footer {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 20%;
+      button {
+        height: 5rem;
+        font-size: 2rem;
+        width: 28rem;
+        text-transform: uppercase;
+      }
+    }
+  }
+}
+
+/* Extra small devices */
+@media (max-width: 576px) {
+  .main-container {
+    padding: 0;
+    .customers-card {
+      height: 100%;
+      width: 100%;
+      border-radius: 0;
+      .customer-details-header {
+        border-radius: 0;
+      }
+      .customer-details-content {
+        .customer-data {
+          width: 90%;
+        }
+      }
+      .customer-details-footer button {
+        width: 90%;
+      }
+    }
+  }
+}

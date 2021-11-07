@@ -1,0 +1,27 @@
+<div class="main-container">
+  <div class="customers-card">
+    <div class="customer-details-header">
+      <div class="img-border"><mat-icon>person</mat-icon></div>
+      <p>{{contactDetails.salutation}} {{contactDetails.firstName}} {{contactDetails.lastName}}</p>
+    </div>
+    
+    <div class="customer-details-content">
+      <div class="customer-data">
+        <p><mat-icon>other_houses</mat-icon> {{contactDetails.addressLine2}} {{contactDetails.zipCode}} {{contactDetails.city}} {{contactDetails.state}}</p>
+      </div>
+      <div class="customer-data">
+        <p><mat-icon>roofing</mat-icon> {{contactDetails.addressLine1}} {{contactDetails.zipCode}} {{contactDetails.city}} {{contactDetails.state}}</p>
+      </div>
+      <div class="customer-data">
+        <p><mat-icon>alternate_email</mat-icon> {{contactDetails.emailAddress}}</p>
+      </div>
+      <div class="customer-data">
+        <p><mat-icon>phone_iphone</mat-icon> {{contactDetails.telePhoneNumber}}</p>
+      </div>
+    </div>
+
+    <div class="customer-details-footer">
+      <button mat-flat-button color="primary" (click)="backToContacts()">Back to Contact List</button>
+    </div>
+  </div>
+</div>

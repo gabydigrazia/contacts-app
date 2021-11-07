@@ -1,0 +1,27 @@
+
+<div class="main-container" *ngIf="!(isHandset$ | async)">
+  <h1>Contact List</h1>
+  <div class="customers-card">
+    <mat-list *ngFor="let customer of customers">
+      <div class="customer-name">
+        <mat-list-item>{{customer.salutation}} {{customer.firstName}} {{customer.lastName}}</mat-list-item>
+        <button mat-flat-button color="primary" (click)="viewDetails(customer)">View Contact</button>
+      </div>
+      <mat-divider></mat-divider>
+    </mat-list>
+  </div>
+</div>
+
+<div class="main-container mobile-container" *ngIf="(isHandset$ | async)">
+  <div class="mobile-header">
+    <p>Contact List</p>
+  </div>
+  <div class="customers-card mobile-card">
+    <mat-list *ngFor="let customer of customers">
+      <div class="customer-name">
+        <button mat-flat-button (click)="viewDetails(customer)">{{customer.salutation}} {{customer.firstName}} {{customer.lastName}}</button>
+      </div>
+      <mat-divider></mat-divider>
+    </mat-list>
+  </div>
+</div>

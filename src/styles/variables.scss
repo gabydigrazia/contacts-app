@@ -1,0 +1,72 @@
+@import '~@angular/material/theming';
+
+$mat-contacts-light-blue: (
+    50: #b9def3,
+    100: #96cded,
+    200: #85c5ea,
+    300: #73bde7,
+    400: #62b5e4,
+    500: #4face1,
+    600: #3fa4de,
+    700: #2e9cdc,
+    800: #2392d1,
+    900: #2185c0,
+    A100: #cbe6f6,
+    A200: #96cded,
+    A400: #3fa4de,
+    A700: #2185c0,
+    contrast: (
+        50: $black-87-opacity,
+        100: $black-87-opacity,
+        200: $black-87-opacity,
+        300: $black-87-opacity,
+        400: $black-87-opacity,
+        500: $white-87-opacity,
+        600: $white-87-opacity,
+        700: $white-87-opacity,
+        A100: $black-87-opacity,
+        A200: $black-87-opacity,
+        A400: $white-87-opacity,
+        A700:$white-87-opacity,
+    )
+); 
+
+$mat-contacts-primary: (
+    50: #f7cd78,
+    100: #f6c665,
+    200: #f5be51,
+    300: #f4b73e,
+    400: #F3B02B,
+    500: #f2ab19,
+    600: #e79f0d,
+    700: #d4910c,
+    800: #c1840b,
+    900: #ae770a,
+    A100: #f7cd78,
+    A200: #f5be51,
+    A400: #f2ab19,
+    A700: #e79f0d,
+    contrast: (
+        50: $black-87-opacity,
+        100: $black-87-opacity,
+        200: $black-87-opacity,
+        300: $black-87-opacity,
+        400: $black-87-opacity,
+        500: $white-87-opacity,
+        600: $white-87-opacity,
+        700: $white-87-opacity,
+        A100: $black-87-opacity,
+        A200: $white-87-opacity,
+        A400: $white-87-opacity,
+        A700:$white-87-opacity,
+    )
+);
+
+$primary: $mat-contacts-primary;
+$primary-color: map-get($primary, 500);
+
+$secondary: $mat-contacts-light-blue;
+$secondary-color: map-get($secondary, 500);
+
+/** Text colors */
+$primary-text-color: #142729;
