@@ -1,7 +1,8 @@
-import { HttpClient, HttpHeaders } from '@angular/common/http';
+import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { BehaviorSubject, Observable } from 'rxjs';
+import { BehaviorSubject } from 'rxjs';
 import { environment } from 'src/environments/environment';
+import { Customers } from '../models/customers';
 
 const ENDPOINT = environment.endpoint;
 
@@ -10,38 +11,34 @@ const ENDPOINT = environment.endpoint;
 })
 export class CustomersService {
 
-  contacts = new BehaviorSubject<any>(null);
+  contacts = new BehaviorSubject<Customers>(null);
   contacts$ = this.contacts.asObservable();
 
-  selectedContact = new BehaviorSubject<any>(null);
+  selectedContact = new BehaviorSubject<Customers>(null);
   selectedContact$ = this.selectedContact.asObservable();
 
   constructor(
     private httpClient: HttpClient
   ) { }
 
- /*  getCustomers(): Observable<any> {
-    return this.httpClient.get<any>(`${ENDPOINT}/Customers`);
-  }*/
-
-  shareContacts(data: any) {
+  shareContacts(data: Customers) {
     /* This function will be called to share customers data  */
     this.contacts.next(data);
   }
 
-  shareSelectedContact(customer: any) {
+  shareSelectedContact(customer: Customers) {
     this.selectedContact.next(customer);
   }
 
   getCustomers() {
-    let promise = new Promise<void>((resolve, reject) => {
-    this.httpClient.get(`${ENDPOINT}/Customers`)
+    return new Promise<void>((resolve) => {
+    this.httpClient.get<Customers>(`${ENDPOINT}/Customers`)
       .toPromise()
       .then(customers => {
-        resolve();
-        this.shareContacts(customers)
+        resolve(this.shareContacts(customers)); 
+      }, () => {
+       alert(new Error(`Error retraiving Customers Data`).message);
       })
     });
-    return promise;
   }
 }

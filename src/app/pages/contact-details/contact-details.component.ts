@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { Customers } from 'src/app/models/customers';
 import { CustomersService } from 'src/app/services/customers.service';
 
 @Component({
@@ -9,7 +10,7 @@ import { CustomersService } from 'src/app/services/customers.service';
 })
 export class ContactDetailsComponent implements OnInit {
 
-  contactDetails: any;
+  contactDetails: Customers;
 
   constructor(
     private customersService: CustomersService,

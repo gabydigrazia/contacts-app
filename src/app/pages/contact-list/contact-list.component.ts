@@ -4,6 +4,7 @@ import { CustomersService } from 'src/app/services/customers.service';
 import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
 import { map } from 'rxjs/operators';
 import { Observable } from 'rxjs';
+import { Customers } from 'src/app/models/customers';
 
 @Component({
   selector: 'app-contact-list',
@@ -16,7 +17,7 @@ export class ContactListComponent implements OnInit {
     map(result => result.matches)
   );
 
-  customers: any[];
+  customers: Customers;
 
   constructor(
     private breakpointObserver: BreakpointObserver,
